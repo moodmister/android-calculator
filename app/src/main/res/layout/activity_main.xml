@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView android:id="@+id/textView1"
+        android:layout_width="380dp"
+        android:layout_height="209dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="504dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableLayout
+            android:layout_width="375dp"
+            android:layout_height="462dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:text="@string/seven" />
+
+                <Space android:minWidth="5dp" />
+
+                <Button
+                    android:id="@+id/btn8"
+                    android:text="@string/eight" />
+
+                <Space android:minWidth="5dp" />
+
+                <Button
+                    android:id="@+id/btn9"
+                    android:text="@string/nine" />
+
+                <Space android:minWidth="5dp" />
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:text="@string/plus" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button android:id="@+id/btn4"
+                    android:text="@string/four"/>
+                <Space
+                    android:minWidth="5dp"/>
+                <Button android:id="@+id/btn5"
+                    android:text="@string/five"/>
+                <Space
+                    android:minWidth="5dp"/>
+                <Button android:id="@+id/btn6"
+                    android:text="@string/six"/>
+                <Space
+                    android:minWidth="5dp"/>
+                <Button android:id="@+id/btnSub"
+                    android:text="@string/minus"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button android:id="@+id/btn1"
+                    android:text="@string/one"/>
+                <Space
+                    android:minWidth="5dp"/>
+                <Button android:id="@+id/btn2"
+                    android:text="@string/two"/>
+                <Space
+                    android:minWidth="5dp"/>
+                <Button android:id="@+id/btn3"
+                    android:text="@string/three"/>
+                <Space
+                    android:minWidth="5dp"/>
+                <Button android:id="@+id/btnMul"
+                    android:text="@string/asterisk"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button android:id="@+id/btn."
+                    android:text="@string/point"/>
+                <Space
+                    android:minWidth="5dp"/>
+                <Button android:id="@+id/btn0"
+                    android:text="@string/zero"/>
+                <Space
+                    android:minWidth="5dp"/>
+                <Button android:id="@+id/btnDiv"
+                    android:text="@string/slash"/>
+                <Space
+                    android:minWidth="5dp"/>
+                <Button android:id="@+id/btnEq"
+                    android:text="@string/equal"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <Button android:id="@+id/btnDrawCircle"
+                    android:text="Draw Circle"
+                    android:layout_span="7"/>
+            </TableRow>
+        </TableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
